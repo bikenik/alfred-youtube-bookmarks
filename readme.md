@@ -11,7 +11,7 @@
 ```
 $ npm install --global alfred-youtube-bookmarks
 ```
-or as [ `youtube.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
+or as [ `youtube-bookmarks.alfredworkflow`](https://github.com/bikenik/alfred-youtube-bookmarks/releases)
 
 *Requires [Node.js](https://nodejs.org) 7.6+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
