@@ -51,19 +51,23 @@ const fetch = async (url, token, action, map) => {
 
 	try {
 		let _dataFetching
+		/* eslint-disable no-await-in-loop */
 		do {
-			let currentItems = _dataFetching ? _dataFetching.items : null
+			const currentItems = _dataFetching ? _dataFetching.items : null
 			if (_dataFetching && _dataFetching.nextPageToken) {
 				action.pageToken = _dataFetching.nextPageToken
 			}
+
 			_dataFetching = await alfy.fetch(url, fetchOptions(token, action))
-			let currentToken = _dataFetching.nextPageToken
+			const currentToken = _dataFetching.nextPageToken
 			if (currentItems) {
-				let tmp = currentItems.concat(_dataFetching.items)
+				const tmp = currentItems.concat(_dataFetching.items)
 				_dataFetching.items = tmp
 				_dataFetching.nextPageToken = currentToken
 			}
-		} while (_dataFetching.nextPageToken);
+		} while (_dataFetching.nextPageToken)
+		/* eslint-enable no-await-in-loop */
+
 		_dataFetching = render(_dataFetching.items)
 	} catch (error) {
 		if (error && error.stack) {
