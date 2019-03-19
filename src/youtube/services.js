@@ -23,7 +23,7 @@ module.exports = {
 					}
 				},
 				icon: {path: './List Filter Images/02e45e931e822c2ad82cb3c236f66605269ce818.png'},
-				valiables: {
+				variables: {
 					mode: 'service'
 				}
 			}
@@ -42,7 +42,7 @@ module.exports = {
 				icon: {path: './List Filter Images/02e45e931e822c2ad82cb3c236f66605269ce818.png'},
 				subtitle: `${snippet.publishedAt.toString().slice(0, 10)} / ${snippet.publishedAt.toString().slice(11, 16)}`,
 				arg: `https://www.youtube.com/watch?v=${snippet.resourceId.videoId}&list=${snippet.playlistId}`,
-				valiables: {
+				variables: {
 					mode: 'service'
 				}
 			}
@@ -59,7 +59,7 @@ module.exports = {
 				title: snippet.title,
 				subtitle: `videoCount: ${statistics.videoCount} / Comment Count: ${statistics.commentCount} / Subscriber Count: ${statistics.subscriberCount} /View count: ${statistics.viewCount}`,
 				arg: `https://www.youtube.com/channel/${id}`,
-				valiables: {
+				variables: {
 					mode: 'service'
 				}
 			}
@@ -81,7 +81,7 @@ module.exports = {
 				text: {
 					largetype: `${snippet.title}n${snippet.descriptionß}`
 				},
-				valiables: {
+				variables: {
 					mode: 'service'
 				}
 			}
