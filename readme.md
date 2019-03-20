@@ -28,7 +28,7 @@ It will be work with Safari only.
 #### Bookmarks
 - To create bookmark needs to have opened Safari's window with youtube's video player active tab.
 - type some shortcut (⌥⌘B - for example) to create bookmark
-- type some shortcut (⌥⌘S - for example) to show bookmarks for current video only.
+- type some shortcut (⌥⌘S - for example) to show and go through the bookmark in the current playing video.
 - <kbd>fn+↵</kbd> to delete one or several bookmarks (in specific filters will be deleted all bookmarks in current filter)
 - hit <kbd>⇧</kbd> To open preview window by the any bookmark.
 
