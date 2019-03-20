@@ -12,7 +12,7 @@ const getAuthenticatedClient = require('./src/authenticate')
 const WorkflowError = require('./src/utils/errors')
 const services = require('./src/youtube/services')
 const settings = require('./src/settings')
-const {tag, addBookmark, playlist} = require('./src/bookmarks/add-bookmark')
+const {tags, addBookmark, playlist} = require('./src/bookmarks/add-bookmark')
 const currentDB = require('./src/input/db.json')
 
 const googleId = process.env.GOOGLE_CLIENT_ID || alfy.config.get('GOOGLE_CLIENT_ID')
@@ -120,7 +120,7 @@ switch (process.argv[3]) {
 		addBookmark(currentDB)
 		break
 	case 'show-tags':
-		tag(currentDB)
+		tags(currentDB)
 		break
 	case 'show-playlists':
 		playlist(currentDB)

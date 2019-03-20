@@ -10,7 +10,7 @@ const addBookmark = currentDB => {
 		myvar = {
 			bookmarks: [{
 				comment: process.env.input ? process.env.input : alfy.input,
-				tag: process.env.tag ? process.env.tag : null,
+				tags: process.env.tags ? JSON.parse(process.env.tags) : null,
 				startsAt: currentInfo.currentTime
 			}],
 			id: currentInfo.allData.video_id,
@@ -47,7 +47,7 @@ const addBookmark = currentDB => {
 		variables: {mode: 'regular'}
 	},
 	{
-		title: process.env.tag ? process.env.tag : 'add some tag',
+		title: process.env.tags ? process.env.tags : 'add some tags',
 		icon: {path: './List Filter Images/78303f403137dc57c4f5809e177bd5f46b892d0f.png'},
 		variables: {
 			mode: 'show-tags',
@@ -56,7 +56,7 @@ const addBookmark = currentDB => {
 	}])
 }
 
-const tag = currentDB => {
+const tags = currentDB => {
 	function removeDuplicates(arr) {
 		const uniqueArray = []
 		const data = []
@@ -70,20 +70,30 @@ const tag = currentDB => {
 	}
 
 	const tags = currentDB.map(y => y.bookmarks
-		.filter(x => x.tag).map(x => x.tag)).reduce((arr, allArr) => [...arr, ...allArr], [])
+		.filter(x => x.tags).map(x => x.tags).reduce((arr, allArr) => [...arr, ...allArr], [])).reduce((arr, allArr) => [...arr, ...allArr], [])
 	const result = removeDuplicates(tags).map(x => {
 		return (x = {
 			title: x,
 			icon: {path: './List Filter Images/78303f403137dc57c4f5809e177bd5f46b892d0f.png'},
-			arg: x
+			autocomplete: x,
+			arg: JSON.stringify([x])
 		})
 	})
+	alfy.input = alfy.input.replace(/.*?‣ /g, '')
 	const items = alfy.inputMatches(result, 'title')
 	if (items.length === 0) {
+		const tags = alfy.input.split(',').map(x => x.trim())
 		items.push({
 			title: `new tag will: '${alfy.input}'`,
-			arg: alfy.input.replace(/\s/g, '_'),
+			arg: JSON.stringify(tags),
 			icon: {path: './List Filter Images/78303f403137dc57c4f5809e177bd5f46b892d0f.png'}
+		})
+	}
+
+	if (process.env.tags) {
+		const currenttags = JSON.parse(process.env.tags)
+		items.forEach(x => {
+			x.arg = JSON.stringify(currenttags.concat(JSON.parse(x.arg)))
 		})
 	}
 
@@ -115,4 +125,4 @@ const playlist = currentDB => {
 	alfy.output(items)
 }
 
-module.exports = {addBookmark, tag, playlist}
+module.exports = {addBookmark, tags, playlist}

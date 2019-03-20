@@ -29,7 +29,7 @@ if (typeof (indexToAdd) === 'number') {
 		},
 		mods: {
 			fn: {
-				subtitle: 'Delet this bookmark',
+				subtitle: 'Delete this bookmark',
 				icon: {path: alfy.icon.delete},
 				variables: {
 					time: x.startsAt,
@@ -48,7 +48,7 @@ if (typeof (indexToAdd) === 'number') {
 			arg: `https://www.youtube.com/watch?v=${y.id}&t=${Math.floor(x.startsAt)}`,
 			quicklookurl: `https://www.youtube.com/watch?v=${y.id}&t=${Math.floor(x.startsAt)}`,
 			meta: {
-				tag: x.tag,
+				tags: x.tags,
 				playlist: y.playlist.title
 			},
 			variables: {
@@ -56,7 +56,7 @@ if (typeof (indexToAdd) === 'number') {
 			},
 			mods: {
 				fn: {
-					subtitle: 'Delet this bookmark',
+					subtitle: 'Delete this bookmark',
 					icon: {path: alfy.icon.delete},
 					variables: {
 						time: x.startsAt,
@@ -70,12 +70,13 @@ if (typeof (indexToAdd) === 'number') {
 }
 
 if (process.argv[3] === 'by-tags') {
-	result = result.filter(x => x.meta.tag === process.env.tag)
+	const currenttags = JSON.parse(process.env.tags)
+	result = result.filter(x => x.meta.tags.filter(y => y === currenttags[0]).length > 0)
 	result.forEach(x => {
 		x.icon.path = './List Filter Images/78303f403137dc57c4f5809e177bd5f46b892d0f.png'
 		x.mods = {
 			fn: {
-				subtitle: `Delet all bookmarks with "${process.env.tag.toUpperCase()}" tag`,
+				subtitle: `Delete all bookmarks with "${process.env.tags.toUpperCase()}" tag`,
 				icon: {path: alfy.icon.delete},
 				variables: {
 					mode: 'by-tag'
@@ -91,7 +92,7 @@ if (process.argv[3] === 'playlist') {
 		x.icon.path = './List Filter Images/f54766acb7bc462bd0e0bc1a34b9dab62ca0d383.png'
 		x.mods = {
 			fn: {
-				subtitle: `Delet all bookmarks in "${x.meta.playlist}" playlist`,
+				subtitle: `Delete all bookmarks in "${x.meta.playlist}" playlist`,
 				icon: {path: alfy.icon.delete},
 				variables: {
 					mode: 'by-playlist',

@@ -1142,7 +1142,7 @@ play()
     "config" : {
     },
     "variables" : {
-      "tag" : "{query}",
+      "tags" : "{query}",
       "input": "{var:input}"
     }
   }
@@ -2162,7 +2162,7 @@ play()
     "config" : {
     },
     "variables" : {
-      "tag": "{query}"
+      "tags": "{query}"
     }
   }
 }</string>
@@ -2761,7 +2761,7 @@ LOGIN</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.4</string>
+	<string>1.0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-youtube-bookmarks#readme</string>
 </dict>

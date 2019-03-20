@@ -11,8 +11,14 @@ function bookmarksDel(prop) {
 	const key = Object.keys(prop)[0]
 	const result = db.map(x => {
 		x.bookmarks.map((y, i) => {
-			if (y[key] == prop[key]) {
-				x.bookmarks.splice(i, 1, null)
+			if (typeof prop[key] === 'object') {
+				if (y[key].filter(x => x == prop[key][0]).length > 0) {
+					x.bookmarks.splice(i, 1, null)
+				}
+			} else if (typeof prop[key] !== 'object') {
+				if (y[key] == prop[key]) {
+					x.bookmarks.splice(i, 1, null)
+				}
 			}
 
 			return y
@@ -57,7 +63,7 @@ function writeDb(db) {
 
 switch (process.argv[3]) {
 	case 'by-tag':
-		writeDb(bookmarksDel({tag: process.env.tag}))
+		writeDb(bookmarksDel({tags: JSON.parse(process.env.tags)}))
 		break
 	case 'by-playlist':
 		writeDb(playlist(process.env.playlist))
