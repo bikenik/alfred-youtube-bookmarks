@@ -628,6 +628,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>BB8F939A-EB00-42D7-B51A-0F8CD75FC601</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5994D0FA-4E34-4699-9FC7-B7B1965E6525</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C2342203-5075-489C-90CE-51790683247E</key>
 		<array>
 			<dict>
@@ -1177,6 +1190,27 @@ play()
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>make-bookmark</string>
+				<key>triggername</key>
+				<string>Make-bookmark</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>BB8F939A-EB00-42D7-B51A-0F8CD75FC601</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1387,7 +1421,7 @@ play()
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"imagefile":"02e45e931e822c2ad82cb3c236f66605269ce818.png","title":"Playlists","arg":"playlist","subtitle":"Show show playlist"},{"imagefile":"178da41f629683a10ac083e63b15c9a978a01988.png","title":"Channel","arg":"channel","subtitle":"Show issues"},{"imagefile":"8ae6da2bd98c51181674fd26ae5786ee5c38f82d.png","title":"Activities","arg":"activities","subtitle":"Show forks"},{"imagefile":"3565188457579ac4edcb91edf9db32d8644b98ee.png","title":"Bookmarks","arg":"bookmarks","subtitle":"Show bookmarks"},{"imagefile":"4691613d5629fcba4730226e2575d85b1cfc2e39.png","title":"Reset","arg":"reset","subtitle":"reset all settings and bookmarks"}]</string>
+				<string>[{"imagefile":"02e45e931e822c2ad82cb3c236f66605269ce818.png","title":"Playlists","arg":"playlist","subtitle":"Show playlist"},{"imagefile":"178da41f629683a10ac083e63b15c9a978a01988.png","title":"Channel","arg":"channel","subtitle":"Show channel"},{"imagefile":"8ae6da2bd98c51181674fd26ae5786ee5c38f82d.png","title":"Activities","arg":"activities","subtitle":"Show activities"},{"imagefile":"3565188457579ac4edcb91edf9db32d8644b98ee.png","title":"Bookmarks","arg":"bookmarks","subtitle":"Show bookmarks"},{"imagefile":"4691613d5629fcba4730226e2575d85b1cfc2e39.png","title":"Reset","arg":"reset","subtitle":"reset all settings and bookmarks"}]</string>
 				<key>keyword</key>
 				<string>yt</string>
 				<key>runningsubtext</key>
@@ -2678,6 +2712,13 @@ SHOW PLAYLISTS</string>
 			<key>ypos</key>
 			<integer>1360</integer>
 		</dict>
+		<key>BB8F939A-EB00-42D7-B51A-0F8CD75FC601</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>400</integer>
+		</dict>
 		<key>C2342203-5075-489C-90CE-51790683247E</key>
 		<dict>
 			<key>note</key>
@@ -2761,7 +2802,7 @@ LOGIN</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-youtube-bookmarks#readme</string>
 </dict>
