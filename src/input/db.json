@@ -1,1 +1,158 @@
-[]
+[
+	{
+		"bookmarks": [
+			{
+				"comment": "What is TypeScript",
+				"tags": [
+					"js",
+					"typescript"
+				],
+				"startsAt": 11.85785022
+			}
+		],
+		"id": "zkMZ7aUta4k",
+		"owner": "bikeNik",
+		"title": "TH WS TypeScript",
+		"playlist": {
+			"title": "Typescript",
+			"sequence": "1 видео из 1"
+		}
+	},
+	{
+		"bookmarks": [
+			{
+				"comment": "Check Your Version of bash",
+				"tags": [
+					"bash",
+					"develope"
+				],
+				"startsAt": 3.908887284
+			},
+			{
+				"comment": "Redirect the Output of Commands",
+				"tags": [
+					"bash",
+					"develope"
+				],
+				"startsAt": 381.578296875
+			},
+			{
+				"comment": "Redirecting and Piping Input ande Output",
+				"tags": [
+					"bash",
+					"develope"
+				],
+				"startsAt": 748.394544508
+			}
+		],
+		"id": "6rwLBSVjpz0",
+		"owner": "bikeNik",
+		"title": "01 Making Decisions in Bash",
+		"playlist": {
+			"title": "Great Bash",
+			"sequence": "1 видео из 8"
+		}
+	},
+	{
+		"bookmarks": [
+			{
+				"comment": "concurrency: example with message",
+				"tags": [
+					"js",
+					"concurrency"
+				],
+				"startsAt": 281.653648673
+			}
+		],
+		"id": "256tiJAKAac",
+		"owner": "bikeNik",
+		"title": "123   Threads, Concurrency and Parallelism",
+		"playlist": {
+			"title": "Advanced JavaScript Concepts",
+			"sequence": "123 видео из 185"
+		}
+	},
+	{
+		"bookmarks": [
+			{
+				"comment": "scope of this inside function",
+				"tags": [
+					"js",
+					"scope",
+					"this"
+				],
+				"startsAt": 359.972286265
+			}
+		],
+		"id": "pV1gTxmiXxA",
+		"owner": "bikeNik",
+		"title": "038   Exercise   Dynamic Scope vs Lexical Scope",
+		"playlist": {
+			"title": "Advanced JavaScript Concepts",
+			"sequence": "38 видео из 185"
+		}
+	},
+	{
+		"bookmarks": [
+			{
+				"comment": "What objects can do.",
+				"tags": [
+					"js",
+					"oop"
+				],
+				"startsAt": 145.344956763
+			},
+			{
+				"comment": "Native Objects in Javascript",
+				"tags": [
+					"js",
+					"oop"
+				],
+				"startsAt": 210.041273263
+			}
+		],
+		"id": "my9DOYJLRHc",
+		"owner": "bikeNik",
+		"title": "1: Introduction to Methods: 1 different kinds of objects",
+		"playlist": {
+			"title": "TH Object-Oriented JS 1",
+			"sequence": "1 видео из 20"
+		}
+	},
+	{
+		"bookmarks": [
+			{
+				"comment": "Определение человека (как личности)",
+				"tags": [
+					"философия"
+				],
+				"startsAt": 3048.178258081
+			}
+		],
+		"id": "F7n1q4u7nrQ",
+		"owner": "New Core",
+		"title": "Сергей Савельев в гостях у Гоблина (полная версия)",
+		"playlist": {
+			"title": null,
+			"sequence": null
+		}
+	},
+	{
+		"bookmarks": [
+			{
+				"comment": "run ruby file",
+				"tags": [
+					"ruby"
+				],
+				"startsAt": 241.149218227
+			}
+		],
+		"id": "PXAr_KWK9CE",
+		"owner": "bikeNik",
+		"title": "Первая программа",
+		"playlist": {
+			"title": "Hasbrains learn Ruby",
+			"sequence": "1 видео из 50"
+		}
+	}
+]
