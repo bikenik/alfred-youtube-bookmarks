@@ -14,7 +14,8 @@ module.exports = {
 		map: ({snippet, contentDetails, id}) => {
 			return {
 				title: snippet.title,
-				subtitle: `${snippet.publishedAt.toString().slice(0, 10)} / ${snippet.publishedAt.toString().slice(11, 16)}ttCount: ${contentDetails.itemCount}`,
+				subtitle: `Count: ${contentDetails.itemCount} \t ${snippet.description}`,
+				text: {largetype: `${snippet.title}\n\n${snippet.description}\n\n${snippet.publishedAt.toString().slice(0, 10)} / ${snippet.publishedAt.toString().slice(11, 16)}`},
 				arg: `https://www.youtube.com/playlist?list=${id}`,
 				mods: {
 					alt: {
@@ -40,7 +41,8 @@ module.exports = {
 			return {
 				title: snippet.title,
 				icon: {path: './List Filter Images/02e45e931e822c2ad82cb3c236f66605269ce818.png'},
-				subtitle: `${snippet.publishedAt.toString().slice(0, 10)} / ${snippet.publishedAt.toString().slice(11, 16)}`,
+				subtitle: snippet.description,
+				text: {largetype: `${snippet.title}\n\n${snippet.description}\n\n${snippet.publishedAt.toString().slice(0, 10)} / ${snippet.publishedAt.toString().slice(11, 16)}`},
 				arg: `https://www.youtube.com/watch?v=${snippet.resourceId.videoId}&list=${snippet.playlistId}`,
 				variables: {
 					mode: 'service'

@@ -941,7 +941,7 @@ play()
 				<key>script</key>
 				<string>function run(argv) {
 	function getTime() {
-		return safari.doJavaScript('var newplayer = document.getElementById("movie_player");if(newplayer.getPlayerState() === 1) {newplayer.pauseVideo(); newplayer.getCurrentTime()}', {in: safari.windows[0].currentTab})
+		return safari.doJavaScript('var newplayer = document.getElementById("movie_player");if(newplayer.getPlayerState() === 1) {newplayer.pauseVideo()};newplayer.getCurrentTime()', {in: safari.windows[0].currentTab})
 	}
 	function getAllData() {
 		return safari.doJavaScript('var newplayer = document.getElementById("movie_player");newplayer.getVideoData()', {in: safari.windows[0].currentTab})
@@ -1036,11 +1036,11 @@ play()
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>45</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>B</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1723,7 +1723,7 @@ play()
 				<key>script</key>
 				<string>function run(argv) {
 	function play(seekTo) {
-		return safari.doJavaScript(`var newplayer = document.getElementById("movie_player");newplayer.seekTo(${seekTo})`, {in: safari.windows[0].currentTab})
+		return safari.doJavaScript(`console.log('doing play seekTo with arg: ', ${seekTo});var newplayer = document.getElementById("movie_player");newplayer.seekTo(${seekTo})`, {in: safari.windows[0].currentTab})
 	}
 	var safari = Application("Safari");
 	var query = argv[0] * 1
@@ -1755,11 +1755,9 @@ play()
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>41</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
-				<key>hotstring</key>
-				<string>S</string>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -2563,7 +2561,7 @@ GET_SEQUENCE()</string>
 		<key>781E63D6-D224-4DA8-9EB4-AEDB62C0D257</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>340</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>

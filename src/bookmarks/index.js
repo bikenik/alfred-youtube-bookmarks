@@ -2,9 +2,9 @@
 
 'use strict'
 const alfy = require('alfy')
-const jsonfile = require('jsonfile')
+const jsonFile = require('jsonfile')
 
-const db = jsonfile.readFileSync('./src/input/db.json')
+const db = jsonFile.readFileSync('./src/input/db.json')
 
 const currentInfo = process.env.tdb ? JSON.parse(process.env.tdb) : []
 const indexToAdd = db.map((x, i) => {
@@ -38,6 +38,7 @@ if (typeof (indexToAdd) === 'number') {
 			}
 		}
 	}))
+
 	result = items.sort((a, b) => (a.arg > b.arg) ? 1 : ((b.arg > a.arg) ? -1 : 0))
 } else if (indexToAdd === undefined || process.argv[3] === 'allBookmarks') {
 	items = db.map(y => y.bookmarks

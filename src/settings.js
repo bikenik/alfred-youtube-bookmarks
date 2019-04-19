@@ -39,7 +39,7 @@ module.exports = input => {
 			arg: input,
 			mods: {
 				alt: {
-					subtitle: 'open in browser medium.com to get instuction',
+					subtitle: 'open in browser medium.com to get instruction',
 					arg: helpUrl
 				}
 			}

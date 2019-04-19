@@ -69,6 +69,7 @@ settings.json
 
 #other
 .DS_Store
+/.idea
 /test
 
 # End of https://www.gitignore.io/api/node
