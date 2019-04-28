@@ -168,6 +168,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>AC8180D1-B018-4B75-9F1D-5711FBEE7E0E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>55AAFCFD-BB80-4571-841A-06D5147193E7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -941,7 +951,7 @@ play()
 				<key>script</key>
 				<string>function run(argv) {
 	function getTime() {
-		return safari.doJavaScript('var newplayer = document.getElementById("movie_player");if(newplayer.getPlayerState() === 1) {newplayer.pauseVideo()};newplayer.getCurrentTime()', {in: safari.windows[0].currentTab})
+		return safari.doJavaScript('var newplayer = document.getElementById("movie_player");if(newplayer.getPlayerState() === 1) {newplayer.pauseVideo(); newplayer.getCurrentTime()}', {in: safari.windows[0].currentTab})
 	}
 	function getAllData() {
 		return safari.doJavaScript('var newplayer = document.getElementById("movie_player");newplayer.getVideoData()', {in: safari.windows[0].currentTab})
@@ -1723,7 +1733,7 @@ play()
 				<key>script</key>
 				<string>function run(argv) {
 	function play(seekTo) {
-		return safari.doJavaScript(`console.log('doing play seekTo with arg: ', ${seekTo});var newplayer = document.getElementById("movie_player");newplayer.seekTo(${seekTo})`, {in: safari.windows[0].currentTab})
+		return safari.doJavaScript(`var newplayer = document.getElementById("movie_player");newplayer.seekTo(${seekTo})`, {in: safari.windows[0].currentTab})
 	}
 	var safari = Application("Safari");
 	var query = argv[0] * 1
@@ -1758,6 +1768,8 @@ play()
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -2561,7 +2573,7 @@ GET_SEQUENCE()</string>
 		<key>781E63D6-D224-4DA8-9EB4-AEDB62C0D257</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>370</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -2800,7 +2812,7 @@ LOGIN</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.8</string>
+	<string>1.0.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-youtube-bookmarks#readme</string>
 </dict>
