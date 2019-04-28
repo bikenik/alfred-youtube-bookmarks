@@ -57,21 +57,9 @@ const addBookmark = currentDB => {
 }
 
 const tags = currentDB => {
-	function removeDuplicates(arr) {
-		const uniqueArray = []
-		const data = []
-		arr.forEach(elem => {
-			if (uniqueArray.indexOf(elem) === -1) {
-				uniqueArray.push(elem)
-				data.push(elem)
-			}
-		})
-		return data
-	}
-
 	const tags = currentDB.map(y => y.bookmarks
 		.filter(x => x.tags).map(x => x.tags).reduce((arr, allArr) => [...arr, ...allArr], [])).reduce((arr, allArr) => [...arr, ...allArr], [])
-	const result = removeDuplicates(tags).map(x => {
+	const result = [...new Set(tags)].map(x => {
 		return (x = {
 			title: x,
 			icon: {path: './List Filter Images/78303f403137dc57c4f5809e177bd5f46b892d0f.png'},
@@ -101,20 +89,8 @@ const tags = currentDB => {
 }
 
 const playlist = currentDB => {
-	function removeDuplicates(arr) {
-		const uniqueArray = []
-		const data = []
-		arr.forEach(elem => {
-			if (uniqueArray.indexOf(elem) === -1) {
-				uniqueArray.push(elem)
-				data.push(elem)
-			}
-		})
-		return data
-	}
-
 	const playlists = currentDB.filter(x => x.playlist.title).map(x => x.playlist.title)
-	const result = removeDuplicates(playlists).map(x => {
+	const result = [...new Set(playlists)].map(x => {
 		return (x = {
 			title: x,
 			icon: {path: './List Filter Images/f54766acb7bc462bd0e0bc1a34b9dab62ca0d383.png'},
