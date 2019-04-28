@@ -168,6 +168,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>AC8180D1-B018-4B75-9F1D-5711FBEE7E0E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>55AAFCFD-BB80-4571-841A-06D5147193E7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
