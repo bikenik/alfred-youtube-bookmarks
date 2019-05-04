@@ -5,7 +5,7 @@ const alfy = require('alfy')
 const helpUrl = 'https://medium.com/@pablo127/google-api-authentication-with-oauth-2-on-the-example-of-gmail-a103c897fd98'
 
 module.exports = input => {
-	if (alfy.config.get('id') === undefined) {
+	if (alfy.config.get('GOOGLE_CLIENT_ID') === undefined) {
 		const subtitle = 'Hit ↵ to set your ID | hit ⌥+↵ to read "how to create client Id" in medium.com'
 		alfy.output([{
 			title: `Your google CLIENT ID is: "${input}"`,
@@ -26,7 +26,7 @@ module.exports = input => {
 			},
 			arg: helpUrl
 		}])
-	} else if (alfy.config.get('secret') === undefined) {
+	} else if (alfy.config.get('GOOGLE_CLIENT_SECRET') === undefined) {
 		const subtitle = 'Hit ↵ to set your SECRET | hit ⌥+↵ to read "how to create client Id" in medium.com'
 		alfy.output([{
 			title: `Your google SECRET ID is: "${input}"`,

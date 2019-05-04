@@ -25,6 +25,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>C2342203-5075-489C-90CE-51790683247E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -88,6 +98,16 @@
 		</array>
 		<key>1420880D-9F7D-4EDB-91C5-77268E0EE054</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A66407A4-D987-426C-9999-85FD5CF0C534</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</string>
@@ -190,6 +210,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>35EBDC71-DA58-4AA1-86E7-3AA2BB673600</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>36FA8A37-35ED-4C95-B288-E4A0BF75D772</key>
 		<array>
 			<dict>
@@ -220,7 +253,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6984D2B6-21EB-4C31-B6C1-93392798F786</string>
+				<string>B13BD6D8-E04D-4F8E-BD01-88D694B369C2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>913317D5-4048-498C-AB7B-B344A8F860F1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -243,18 +286,7 @@
 			</dict>
 		</array>
 		<key>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A66407A4-D987-426C-9999-85FD5CF0C534</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>3ED22E2F-7B2A-48A9-9FC8-78D1079EF617</key>
 		<array>
 			<dict>
@@ -368,19 +400,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E320ED35-3DC5-41DC-9797-031807C6B62A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6984D2B6-21EB-4C31-B6C1-93392798F786</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>913317D5-4048-498C-AB7B-B344A8F860F1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -671,7 +690,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6984D2B6-21EB-4C31-B6C1-93392798F786</string>
+				<string>913317D5-4048-498C-AB7B-B344A8F860F1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -806,6 +825,16 @@
 		</array>
 		<key>BB8F939A-EB00-42D7-B51A-0F8CD75FC601</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A66407A4-D987-426C-9999-85FD5CF0C534</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</string>
@@ -1261,29 +1290,6 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node ./src/bookmarks/update-db.js</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
 				<string>function run(argv) {
@@ -1323,11 +1329,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>45</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>B</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1542,6 +1548,42 @@ safari = Application("Safari");
 			<string>AA62575A-453F-45DF-860D-0D33440B4B59</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>database</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>35EBDC71-DA58-4AA1-86E7-3AA2BB673600</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node ./src/bookmarks/update-db.js</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2091,6 +2133,25 @@ var chrome = Application("Google Chrome");
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>externaltriggerid</key>
+				<string>database</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>B13BD6D8-E04D-4F8E-BD01-88D694B369C2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -2210,29 +2271,6 @@ var chrome = Application("Google Chrome");
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>D417FDF1-9C63-4BBD-9C0B-EFC7112D8BE4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node ./src/bookmarks/update-db.js</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6984D2B6-21EB-4C31-B6C1-93392798F786</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -2985,7 +3023,7 @@ var chrome = Application("Google Chrome");
 		<key>00241614-9A0D-473E-9C8F-6D2D56C29CED</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2670</integer>
+			<integer>2510</integer>
 			<key>ypos</key>
 			<integer>1740</integer>
 		</dict>
@@ -2994,7 +3032,7 @@ var chrome = Application("Google Chrome");
 			<key>note</key>
 			<string>Action selection</string>
 			<key>xpos</key>
-			<integer>1030</integer>
+			<integer>20</integer>
 			<key>ypos</key>
 			<integer>640</integer>
 		</dict>
@@ -3008,7 +3046,7 @@ var chrome = Application("Google Chrome");
 		<key>08F6689C-5DF9-4CFA-9C8B-DAC4DA00A437</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2320</integer>
+			<integer>2160</integer>
 			<key>ypos</key>
 			<integer>1480</integer>
 		</dict>
@@ -3039,7 +3077,7 @@ ADD BOOKMARKS</string>
 		<key>1613BFE1-2FFE-493A-923E-69D7D45B56A9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2940</integer>
+			<integer>2780</integer>
 			<key>ypos</key>
 			<integer>1480</integer>
 		</dict>
@@ -3068,12 +3106,14 @@ SAFARI</string>
 			<string>...
 SHOW TAGS</string>
 			<key>xpos</key>
-			<integer>2420</integer>
+			<integer>2260</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
 		<key>220C24AB-B90C-4D9B-92E7-B3F881D9836A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
 			<integer>1960</integer>
 			<key>ypos</key>
@@ -3106,6 +3146,15 @@ BOOKMARK-UPDATE</string>
 			<key>ypos</key>
 			<integer>130</integer>
 		</dict>
+		<key>35EBDC71-DA58-4AA1-86E7-3AA2BB673600</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>400</integer>
+		</dict>
 		<key>36FA8A37-35ED-4C95-B288-E4A0BF75D772</key>
 		<dict>
 			<key>note</key>
@@ -3136,21 +3185,21 @@ CURRENT BOOKMARKS</string>
 		<key>39C014E3-E838-4C93-9EA7-5D897975E7C5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>3060</integer>
+			<integer>2900</integer>
 			<key>ypos</key>
 			<integer>1740</integer>
 		</dict>
 		<key>3CE3F1B2-2A75-4B13-8EA3-848F99E60F69</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>400</integer>
 		</dict>
 		<key>3ED22E2F-7B2A-48A9-9FC8-78D1079EF617</key>
 		<dict>
 			<key>xpos</key>
-			<integer>3130</integer>
+			<integer>2970</integer>
 			<key>ypos</key>
 			<integer>1480</integer>
 		</dict>
@@ -3163,6 +3212,8 @@ CURRENT BOOKMARKS</string>
 		</dict>
 		<key>549C5602-B6F2-4409-89B8-8090610610C8</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
 			<key>xpos</key>
 			<integer>1220</integer>
 			<key>ypos</key>
@@ -3174,14 +3225,15 @@ CURRENT BOOKMARKS</string>
 			<string>...
 PLAY SEEK_TO()</string>
 			<key>xpos</key>
-			<integer>3250</integer>
+			<integer>3090</integer>
 			<key>ypos</key>
 			<integer>1090</integer>
 		</dict>
 		<key>5994D0FA-4E34-4699-9FC7-B7B1965E6525</key>
 		<dict>
 			<key>note</key>
-			<string>...
+			<string>SAFARI
+...
 GET_TIME()
 PLAY()
 GET_ALL_DATA()
@@ -3215,31 +3267,24 @@ GET_SEQUENCE()</string>
 			<key>ypos</key>
 			<integer>930</integer>
 		</dict>
-		<key>6984D2B6-21EB-4C31-B6C1-93392798F786</key>
-		<dict>
-			<key>xpos</key>
-			<integer>1940</integer>
-			<key>ypos</key>
-			<integer>1090</integer>
-		</dict>
 		<key>6C886378-F5DA-459C-987D-62DE55A887E4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2320</integer>
+			<integer>2160</integer>
 			<key>ypos</key>
 			<integer>1120</integer>
 		</dict>
 		<key>6DC56EBC-DF88-4DBD-B42C-70C07763B093</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2320</integer>
+			<integer>2160</integer>
 			<key>ypos</key>
 			<integer>1300</integer>
 		</dict>
 		<key>6E8A90F5-CCD3-4D62-ADD9-6A4534688F2C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2750</integer>
+			<integer>2590</integer>
 			<key>ypos</key>
 			<integer>1710</integer>
 		</dict>
@@ -3315,7 +3360,7 @@ PLAY()</string>
 		<key>913317D5-4048-498C-AB7B-B344A8F860F1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2140</integer>
+			<integer>1980</integer>
 			<key>ypos</key>
 			<integer>1090</integer>
 		</dict>
@@ -3338,7 +3383,7 @@ PLAY()</string>
 		<key>9682C779-37F3-4B5B-9333-32C0CE0BEC3B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2670</integer>
+			<integer>2510</integer>
 			<key>ypos</key>
 			<integer>1590</integer>
 		</dict>
@@ -3352,7 +3397,7 @@ PLAY()</string>
 		<key>986BF807-357B-459A-8DDA-342D98CF1251</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2990</integer>
+			<integer>2830</integer>
 			<key>ypos</key>
 			<integer>1120</integer>
 		</dict>
@@ -3366,7 +3411,7 @@ PLAY()</string>
 		<key>9EBB4567-7E2F-4FC6-84A8-F2A12528413F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2420</integer>
+			<integer>2260</integer>
 			<key>ypos</key>
 			<integer>1450</integer>
 		</dict>
@@ -3404,9 +3449,18 @@ SERVICES</string>
 		<key>AD269783-2FEA-401E-99EF-50F25076B9B6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2670</integer>
+			<integer>2510</integer>
 			<key>ypos</key>
 			<integer>1120</integer>
+		</dict>
+		<key>B13BD6D8-E04D-4F8E-BD01-88D694B369C2</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>1980</integer>
+			<key>ypos</key>
+			<integer>900</integer>
 		</dict>
 		<key>B8464987-27E4-46C7-AE5E-E1B0B1818E1D</key>
 		<dict>
@@ -3421,14 +3475,14 @@ SERVICES</string>
 			<string>...
 SHOW PLAYLISTS</string>
 			<key>xpos</key>
-			<integer>2420</integer>
+			<integer>2260</integer>
 			<key>ypos</key>
 			<integer>1710</integer>
 		</dict>
 		<key>BAA2903B-6C6F-45A0-8324-A9FD985181DF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>3250</integer>
+			<integer>3090</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
@@ -3442,7 +3496,8 @@ SHOW PLAYLISTS</string>
 		<key>BEDE70C1-1C0D-45C2-9C6D-55AFF7B9D62F</key>
 		<dict>
 			<key>note</key>
-			<string>...
+			<string>CHROME
+...
 GET_TIME()
 PLAY()
 GET_ALL_DATA()
@@ -3470,14 +3525,14 @@ GET_SEQUENCE()</string>
 GET_TIME()
 GET_ALL_DATA()</string>
 			<key>xpos</key>
-			<integer>2420</integer>
+			<integer>2260</integer>
 			<key>ypos</key>
 			<integer>1270</integer>
 		</dict>
 		<key>CBC474C3-EA38-477B-B993-5667A843A8C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>3410</integer>
+			<integer>3250</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
@@ -3489,14 +3544,14 @@ GET_ALL_DATA()</string>
 GET_TIME()
 GET_ALL_DATA()</string>
 			<key>xpos</key>
-			<integer>2420</integer>
+			<integer>2260</integer>
 			<key>ypos</key>
 			<integer>1090</integer>
 		</dict>
 		<key>E2E71F88-54CC-4B56-82D1-6AC8DAE1CBD5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2750</integer>
+			<integer>2590</integer>
 			<key>ypos</key>
 			<integer>1090</integer>
 		</dict>
@@ -3543,13 +3598,13 @@ LOGIN</string>
 		<key>FD9866D9-144E-4DFC-9874-CAEB17087367</key>
 		<dict>
 			<key>xpos</key>
-			<integer>2750</integer>
+			<integer>2590</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1.1</string>
+	<string>1.1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-youtube-bookmarks#readme</string>
 </dict>

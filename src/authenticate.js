@@ -19,7 +19,7 @@
 require('dotenv').config()
 const http = require('http')
 const url = require('url')
-const opn = require('opn')
+const opn = require('open')
 const {OAuth2Client} = require('google-auth-library')
 const destroyer = require('server-destroy')
 const alfy = require('alfy')

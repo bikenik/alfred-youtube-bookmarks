@@ -42,30 +42,33 @@ if (typeof (indexToAdd) === 'number') {
 	result = items.sort((a, b) => (a.arg > b.arg) ? 1 : ((b.arg > a.arg) ? -1 : 0))
 } else if (indexToAdd === undefined || process.argv[3] === 'allBookmarks') {
 	items = db.map(y => y.bookmarks
-		.map(x => ({
-			title: x.comment,
-			subtitle: `🚩 ${y.title}${`${y.playlist && y.playlist.title ? `    📀 ${y.playlist.title}` : ''}`}${`${y.playlist && y.playlist.sequence ? `    🧩 ${y.playlist.sequence}` : ''}`}`,
-			icon: {path: './List Filter Images/92f6721c1c5abf70d54511205a35ac71a9f06e96.png'},
-			arg: `https://www.youtube.com/watch?v=${y.id}&t=${Math.floor(x.startsAt)}`,
-			quicklookurl: `https://www.youtube.com/watch?v=${y.id}&t=${Math.floor(x.startsAt)}`,
-			meta: {
-				tags: x.tags,
-				playlist: y.playlist.title
-			},
-			variables: {
-				mode: 'playByNewTab'
-			},
-			mods: {
-				fn: {
-					subtitle: 'Delete this bookmark',
-					icon: {path: alfy.icon.delete},
-					variables: {
-						time: x.startsAt,
-						mode: 'by-time'
+		.map(x => {
+			const subtitle = `🚩 ${y.title}${`${y.playlist && y.playlist.title ? `    📀 ${y.playlist.title}` : ''}`}${`${y.playlist && y.playlist.sequence ? `    🧩 ${y.playlist.sequence}` : ''}`}`
+			return {
+				title: x.comment,
+				subtitle,
+				text: {largetype: `${x.comment}\n\n${subtitle.replace(/📀/g, '\n📀').replace(/🧩/g, '\n🧩')}`},
+				icon: {path: './List Filter Images/92f6721c1c5abf70d54511205a35ac71a9f06e96.png'},
+				arg: `https://www.youtube.com/watch?v=${y.id}&t=${Math.floor(x.startsAt)}`,
+				quicklookurl: `https://www.youtube.com/watch?v=${y.id}&t=${Math.floor(x.startsAt)}`,
+				meta: {
+					tags: x.tags,
+					playlist: y.playlist.title
+				},
+				variables: {
+					mode: 'playByNewTab'
+				},
+				mods: {
+					fn: {
+						subtitle: 'Delete this bookmark',
+						icon: {path: alfy.icon.delete},
+						variables: {
+							time: x.startsAt,
+							mode: 'by-time'
+						}
 					}
-				}
-			}
-		})
+				}}
+		}
 		))
 	result = items.reduce((arr, allArr) => [...arr, ...allArr], []).reverse()
 }
