@@ -1330,11 +1330,11 @@ safari = Application("Safari");
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>45</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>B</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -2137,11 +2137,11 @@ var chrome = Application("Google Chrome");
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>41</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>S</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
