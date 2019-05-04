@@ -1,6 +1,6 @@
 {
 	"name": "alfred-youtube-bookmarks",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "youtube-bookmarks-dashboard",
 	"main": "index.js",
 	"repository": "https://github.com/bikenik/alfred-youtube-bookmarks",
