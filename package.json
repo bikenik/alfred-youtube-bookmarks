@@ -1,6 +1,6 @@
 {
 	"name": "alfred-youtube-bookmarks",
-	"version": "1.0.9",
+	"version": "1.0.7",
 	"description": "youtube-bookmarks-dashboard",
 	"main": "index.js",
 	"repository": "https://github.com/bikenik/alfred-youtube-bookmarks",
@@ -34,7 +34,7 @@
 	"dependencies": {
 		"alfy": "0.8.0",
 		"dotenv": "^7.0.0",
-		"google-auth-library": "^3.1.2",
+		"google-auth-library": "^3.1.1",
 		"googleapis": "^39.2.0",
 		"http": "0.0.0",
 		"jsonfile": "^5.0.0",
@@ -44,7 +44,7 @@
 		"url": "^0.11.0"
 	},
 	"devDependencies": {
-		"ava": "^1.4.1",
+		"ava": "^1.2.1",
 		"xo": "^0.24.0"
 	},
 	"xo": {
