@@ -7,7 +7,7 @@ module.exports = {
 	playlist: {
 		query: {
 			part: 'snippet' + ',' + 'contentDetails' + ',' + 'status',
-			channelId: process.env.CHANNEL_ID,
+			mine: true,
 			maxResults: '50'
 		},
 		url: 'https://www.googleapis.com/youtube/v3/playlists',
@@ -53,7 +53,7 @@ module.exports = {
 	channel: {
 		query: {
 			part: 'snippet' + ',' + 'contentDetails' + ',' + 'statistics',
-			id: process.env.CHANNEL_ID
+			mine: true
 		},
 		url: 'https://www.googleapis.com/youtube/v3/channels',
 		map: ({snippet, id, statistics}) => {
@@ -70,7 +70,7 @@ module.exports = {
 	activities: {
 		query: {
 			part: 'snippet' + ',' + 'contentDetails',
-			channelId: process.env.CHANNEL_ID,
+			mine: true,
 			maxResults: '50'
 		},
 		url: 'https://www.googleapis.com/youtube/v3/activities',
