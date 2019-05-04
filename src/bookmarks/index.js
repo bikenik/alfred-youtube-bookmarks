@@ -4,7 +4,7 @@
 const alfy = require('alfy')
 const jsonFile = require('jsonfile')
 
-const db = jsonFile.readFileSync('./src/input/db.json')
+const db = jsonFile.readFileSync(`${process.env.alfred_workflow_data}/db.json`)
 
 const currentInfo = process.env.tdb ? JSON.parse(process.env.tdb) : []
 const indexToAdd = db.map((x, i) => {
@@ -72,7 +72,7 @@ if (typeof (indexToAdd) === 'number') {
 
 if (process.argv[3] === 'by-tags') {
 	const currenttags = JSON.parse(process.env.tags)
-	result = result.filter(x => x.meta.tags.filter(y => y === currenttags[0]).length > 0)
+	result = result.filter(x => x.meta.tags && x.meta.tags.filter(y => y === currenttags[0]).length > 0)
 	result.forEach(x => {
 		x.icon.path = './List Filter Images/78303f403137dc57c4f5809e177bd5f46b892d0f.png'
 		x.mods = {

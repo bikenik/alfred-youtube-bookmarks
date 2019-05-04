@@ -3,16 +3,32 @@
 
 'use strict'
 const jsonfile = require('jsonfile')
+const pathExists = require('path-exists')
 
-const db = jsonfile.readFileSync('./src/input/db.json')
-const dbFile = './src/input/db.json'
+const dbFile = `${process.env.alfred_workflow_data}/db.json`
+let db
+(async () => {
+	const dbFile = `${process.env.alfred_workflow_data}/db.json`
+	if (await pathExists(dbFile)) {
+		db = require(dbFile)
+	} else {
+		jsonfile.writeFile(dbFile, [], {
+			spaces: 2
+		}, error => {
+			if (error !== null) {
+				console.error(error)
+			}
+		})
+	}
+})()
 
 function bookmarksDel(prop) {
+	db = require(dbFile)
 	const key = Object.keys(prop)[0]
 	const result = db.map(x => {
 		x.bookmarks.map((y, i) => {
 			if (typeof prop[key] === 'object') {
-				if (y[key].filter(x => x == prop[key][0]).length > 0) {
+				if (y[key] && y[key].filter(x => x == prop[key][0]).length > 0) {
 					x.bookmarks.splice(i, 1, null)
 				}
 			} else if (typeof prop[key] !== 'object') {
@@ -41,6 +57,7 @@ function bookmarksDel(prop) {
 }
 
 function playlist(val) {
+	db = require(dbFile)
 	db.map((x, i) => {
 		if (x.playlist.title === val) {
 			db.splice(i, 1, null)

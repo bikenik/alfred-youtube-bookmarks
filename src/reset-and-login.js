@@ -2,7 +2,7 @@
 'use strict'
 const jsonfile = require('jsonfile')
 
-const dbFile = './src/input/db.json'
+const dbFile = `${process.env.alfred_workflow_data}/db.json`
 
 const alfy = require('alfy')
 

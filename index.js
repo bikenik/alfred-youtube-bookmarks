@@ -13,13 +13,14 @@ const WorkflowError = require('./src/utils/errors')
 const services = require('./src/youtube/services')
 const settings = require('./src/settings')
 const {tags, addBookmark, playlist} = require('./src/bookmarks/add-bookmark')
-const currentDB = require('./src/input/db.json')
+
+const db = `${process.env.alfred_workflow_data}/db.json`
+const currentDB = require(db)
 
 const googleId = process.env.GOOGLE_CLIENT_ID || alfy.config.get('GOOGLE_CLIENT_ID')
 const googleSecret = process.env.GOOGLE_CLIENT_SECRET || alfy.config.get('GOOGLE_CLIENT_SECRET')
 const googleRedirectCallback = 'http://localhost'
 
-const db = './src/input/db.json'
 const ALIVE_TIME = 3000000
 
 const fetchOptions = (token, query = '') => ({
