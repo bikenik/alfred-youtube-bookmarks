@@ -1246,6 +1246,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1282,7 +1284,7 @@
 			<key>uid</key>
 			<string>84FD8D9B-E05F-42A2-9F65-BAE63C4C4ED0</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1329,11 +1331,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>45</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>B</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1450,6 +1452,8 @@ safari = Application("Safari");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1486,7 +1490,7 @@ safari = Application("Safari");
 			<key>uid</key>
 			<string>2EE7BCB4-E7F6-47B4-B73F-A0DD000888A6</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1740,6 +1744,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1778,7 +1784,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>79E7F396-F9CD-41B7-A433-8CCE209A0AD5</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1787,6 +1793,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1823,7 +1831,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>81EE7267-07EA-42A9-8AF9-C00D1BCF18C0</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1873,6 +1881,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1911,7 +1921,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>930F5F67-3395-404D-AAF9-8BD5A0E29A59</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1983,7 +1993,7 @@ var chrome = Application("Google Chrome");
 			<key>config</key>
 			<dict>
 				<key>browser</key>
-				<string>com.google.Chrome</string>
+				<string></string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
@@ -2005,6 +2015,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2043,7 +2055,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>6E9B067F-87C3-4976-99DA-6E31FC89FD01</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2090,6 +2102,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2128,7 +2142,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>E320ED35-3DC5-41DC-9797-031807C6B62A</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2161,11 +2175,11 @@ var chrome = Application("Google Chrome");
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>41</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>S</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -2363,6 +2377,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2399,7 +2415,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>E2E71F88-54CC-4B56-82D1-6AC8DAE1CBD5</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2595,6 +2611,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2631,7 +2649,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>9EBB4567-7E2F-4FC6-84A8-F2A12528413F</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2729,6 +2747,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2765,7 +2785,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>FD9866D9-144E-4DFC-9874-CAEB17087367</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2797,6 +2817,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2833,7 +2855,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>1C767D24-7D71-4A0F-9AB4-04A4466B65C8</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2883,6 +2905,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2919,7 +2943,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>BA08DC36-DF22-4BFA-A87F-51146C673193</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2928,6 +2952,8 @@ var chrome = Application("Google Chrome");
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -2964,7 +2990,7 @@ var chrome = Application("Google Chrome");
 			<key>uid</key>
 			<string>6E8A90F5-CCD3-4D62-ADD9-6A4534688F2C</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -3604,7 +3630,7 @@ LOGIN</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1.3</string>
+	<string>1.1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-youtube-bookmarks#readme</string>
 </dict>
